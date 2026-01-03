@@ -1,6 +1,6 @@
 # Belajar PHP 
 
-PHP merupakan bahasa pemograman yang berjalan di server-side. Artinya PHP berjalan di server, bukan di browser. Browser hanya meneriman hasil akhir berupa HTML. 
+PHP merupakan bahasa pemrograman yang berjalan di server-side. Artinya PHP berjalan di server, bukan di browser. Browser hanya meneriman hasil akhir berupa HTML. 
 
 Alur kerja : 
 
