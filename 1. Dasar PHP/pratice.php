@@ -53,4 +53,94 @@
     echo "Apakah x lebih besar atau sama dengan y? " . ($x >= $y ? 'true' : 'false') . "<br />";
 
 
+// perulangan 
+// for loop
+    echo "For Loop: <br />";
+    for ($i = 1; $i <= 5; $i++) {
+        echo "Iterasi ke-$i <br />";
+    }
+
+// while loop
+    echo "While Loop: <br />";
+    $j = 1;
+    while ($j <= 5) {
+        echo "Iterasi ke-$j <br />";
+        $j++;
+    }   
+
+// do while loop
+    echo "Do While Loop: <br />";           
+    $k = 1;
+    do {    
+        echo "Iterasi ke-$k <br />";
+        $k++;
+    } while ($k <= 5);
+    
+// control flow 
+// if else
+    $nilai = 85;
+
+    if ($nilai >= 90) {
+        echo "Grade: A";
+    } elseif ($nilai >= 80) {
+        echo "Grade: B";
+    } elseif ($nilai >= 70) {
+        echo "Grade: C";
+    } elseif ($nilai >= 60) {
+        echo "Grade: D";
+    } else {
+        echo "Grade: E";
+    }
+    echo "<br />";
+
+// ternary operator
+    $umur = 20;
+    $status = ($umur >= 18) ? "Dewasa" : "Belum Dewasa";
+    echo "Status: $status";
+
+// switch case, break, continue
+$role = "editor";
+$status = "aktif";
+
+switch ($role) {
+    case 'admin':
+        if ($status == "aktif") {
+            echo "Selamat datang Admin!";
+        } else {
+            echo "Akun admin tidak aktif.";
+        }
+        break;
+    case 'editor':
+        echo "Selamat datang Editor!";
+        break;
+    case 'user':
+        echo "Selamat datang User!";
+        break;
+    default:
+        echo "Role tidak dikenali.";
+        break;
+}
+echo "<br>";
+
+//  break 
+for ($i = 1; $i <= 10; $i++) {
+    if ($i == 6) {
+        break; // Hentikan perulangan saat $i mencapai 6
+    }
+    echo  "$i <br>";
+}
+
+// continue 
+
+echo "<br>";
+for ($i = 1; $i <= 10; $i++) {
+    if ($i == 5) {
+        continue; // Lewati angka 5
+    }
+    echo "Angka: $i <br>"; // Ini akan mencetak semua angka kecuali 5
+}
+
+
+
+
 ?>

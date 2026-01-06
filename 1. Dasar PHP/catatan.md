@@ -67,3 +67,77 @@ var_dump($namaLengkap);
     echo "Apakah x lebih kecil atau sama dengan y? " . ($x <= $y ? 'true' : 'false') . "<br />";
     echo "Apakah x lebih besar atau sama dengan y? " . ($x >= $y ? 'true' : 'false') . "<br />";
 ```
+
+## Control Flow 
+
+### If-else
+```
+    $nilai = 85;
+
+    if ($nilai >= 90) {
+        echo "Grade: A";
+    } elseif ($nilai >= 80) {
+        echo "Grade: B";
+    } elseif ($nilai >= 70) {
+        echo "Grade: C";
+    } elseif ($nilai >= 60) {
+        echo "Grade: D";
+    } else {
+        echo "Grade: E";
+    }
+    echo "<br />";
+```
+
+### Ternary Operator 
+```
+  $umur = 20;
+    $status = ($umur >= 18) ? "Dewasa" : "Belum Dewasa";
+    echo "Status: $status";
+```
+
+### Switch case 
+```
+$role = "editor";
+$status = "aktif";
+
+switch ($role) {
+    case 'admin':
+        if ($status == "aktif") {
+            echo "Selamat datang Admin!";
+        } else {
+            echo "Akun admin tidak aktif.";
+        }
+        break;
+    case 'editor':
+        echo "Selamat datang Editor!";
+        break;
+    case 'user':
+        echo "Selamat datang User!";
+        break;
+    default:
+        echo "Role tidak dikenali.";
+        break;
+}
+echo "<br>";
+```
+
+### Break 
+```
+for ($i = 1; $i <= 10; $i++) {
+    if ($i == 6) {
+        break; // Hentikan perulangan saat $i mencapai 6
+    }
+    echo  "$i <br>";
+}
+```
+
+### Continue 
+```
+echo "<br>";
+for ($i = 1; $i <= 10; $i++) {
+    if ($i == 5) {
+        continue; // Lewati angka 5
+    }
+    echo "Angka: $i <br>"; // Ini akan mencetak semua angka kecuali 5
+}
+```
