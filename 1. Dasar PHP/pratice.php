@@ -140,7 +140,38 @@ for ($i = 1; $i <= 10; $i++) {
     echo "Angka: $i <br>"; // Ini akan mencetak semua angka kecuali 5
 }
 
+// array 
+
+$buah = ["Apel", "Nanas", "Mangga", "Pisang"];  
+
+echo $buah[1]; // Nanas
+echo "<br>";
+$buah[] = "Durian";           // tambah data
+array_push($buah, "Melon");  // tambah data
+array_pop($buah);            // hapus terakhir
+unset($buah[2]);         
+print_r($buah);
+
+foreach ($buah as $item) {
+    echo "<ul>"; 
+    echo "<li>$item</li>";
+    echo "</ul>";
+}
 
 
+// associative array
 
+$profil = [
+    "nama"   => "Enggi Auliya Yudhiex",
+    "umur"   => 17,
+    "jurusan"=> "TJKT",
+    "alamat" => "Surakarta"
+];
+
+echo $profil["nama"];
+echo "<br>";
+$profil["hobi"] = "ngoding"; // tambah data
+foreach ($profil as $key => $value) {
+    echo "$key : $value <br>";
+}
 ?>
