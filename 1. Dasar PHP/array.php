@@ -25,4 +25,9 @@ $profil = [
 
 echo $profil["nama"];
 echo "<br>";
+
+$profil["hobi"] = "ngoding"; // tambah data
+foreach ($profil as $key => $value) {
+    echo "$key : $value <br>";
+}
 ?>
