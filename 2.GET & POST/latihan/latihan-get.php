@@ -1,6 +1,6 @@
 <?php
-$nama = $_POST["email"];
-$password = $_POST["password"];
+$nama = $_GET["email"];
+$password = $_GET["password"];
 
 if (isset($nama) && isset($password) != "") {
     echo "Halo, $nama! Selamat datang di situs kami.";
