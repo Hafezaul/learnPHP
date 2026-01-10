@@ -53,4 +53,31 @@ function hitungJumlah($arr) {
 $nilaiArray = [10, 20, 30, 40];
 echo "Jumlah nilai dalam array: " . hitungJumlah($nilaiArray) . "<br>";
 
+
+
+// latihan 
+
+function luasPersegiPanjang($panjang, $lebar) {
+    return $panjang * $lebar;
+}
+
+luasPersegiPanjang(5, 10);
+
+echo "Luas persegi panjang: " . luasPersegiPanjang(5, 10) . "<br>";
+
+function konversiSuhu($celsius) {
+    $fahrenheit = ($celsius * 9/5) + 32;
+    return $fahrenheit;
+}
+echo "Suhu dalam Fahrenheit: " . konversiSuhu(25) . "°F<br>";
+
+function statusLulus($nilai) {
+    if ($nilai >= 60) {
+        return "Lulus<br>";
+    } else {
+        return "Tidak Lulus<br>";
+    }
+}
+echo statusLulus(75);
+echo statusLulus(50);
 ?>
